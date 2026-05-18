@@ -1,7 +1,1 @@
-<?php get_header(); ?>
-<main class="jp-container jp-content jp-single-job">
-<?php while (have_posts()) : the_post(); $job_id=get_the_ID(); ?>
-  <article class="jp-single-layout"><section class="jp-single-main"><span class="jp-kicker">Job opportunity</span><h1><?php the_title(); ?></h1><div class="jp-content-body"><?php the_content(); ?></div></section><aside class="jp-sidebar-card"><h3>Apply for this role</h3><p><?php echo esc_html(function_exists('JPortal_Core::salary') ? '' : ''); ?></p><form class="jp-form jp-apply-form"><input type="hidden" name="job_id" value="<?php echo esc_attr($job_id); ?>"><textarea name="message" placeholder="Cover letter or message to employer"></textarea><button class="jp-btn jp-btn-primary">Apply Now</button></form><button class="jp-btn jp-save-job" data-job="<?php echo esc_attr($job_id); ?>">Save Job</button></aside></article>
-<?php endwhile; ?>
-</main>
-<?php get_footer(); ?>
+<?php get_header(); ?><main class="jp-container jp-content jp-single-job"><?php while(have_posts()): the_post(); $job_id=get_the_ID(); ?><article class="jp-single-layout"><section class="jp-single-main"><span class="jp-kicker">Job opportunity</span><h1><?php the_title(); ?></h1><div class="jp-content-body"><?php the_content(); ?></div></section><aside class="jp-sidebar-card"><h3>Apply for this role</h3><form class="jp-form jp-apply-form"><input type="hidden" name="job_id" value="<?php echo esc_attr($job_id); ?>"><textarea name="message" placeholder="Cover letter or message to employer"></textarea><button class="jp-btn jp-btn-primary">Apply Now</button></form><button class="jp-btn jp-save-job" data-job="<?php echo esc_attr($job_id); ?>">Save Job</button></aside></article><?php endwhile; ?></main><?php get_footer(); ?>

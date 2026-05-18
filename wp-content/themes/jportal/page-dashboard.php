@@ -1,3 +1,1 @@
-<?php get_header(); ?>
-<main class="jp-container jp-content"><div class="jp-page-head"><span class="jp-kicker">Dashboard</span><h1>Your jPortal workspace</h1></div><?php echo do_shortcode('[jportal_candidate_dashboard]'); ?><?php echo do_shortcode('[jportal_employer_dashboard]'); ?><?php echo do_shortcode('[jportal_messages]'); ?></main>
-<?php get_footer(); ?>
+<?php get_header(); ?><main class="jp-container jp-content"><div class="jp-page-head"><span class="jp-kicker">Dashboard</span><h1>Your jPortal workspace</h1></div><?php echo do_shortcode('[jportal_candidate_dashboard]'); ?><?php echo do_shortcode('[jportal_employer_dashboard]'); ?><?php echo do_shortcode('[jportal_messages]'); ?></main><?php get_footer(); ?>

@@ -1,3 +1,1 @@
-<?php get_header(); ?>
-<main class="jp-container jp-content"><div class="jp-page-head"><span class="jp-kicker">Companies</span><h1>Discover hiring companies</h1><p>Explore employer profiles, reviews, ratings, and open positions.</p></div><?php echo do_shortcode('[jportal_companies limit="12"]'); ?></main>
-<?php get_footer(); ?>
+<?php get_header(); ?><main class="jp-container jp-content"><div class="jp-page-head"><span class="jp-kicker">Companies</span><h1>Discover hiring companies</h1><p>Explore employer profiles, reviews, ratings, and open positions.</p></div><?php echo do_shortcode('[jportal_companies limit="12"]'); ?></main><?php get_footer(); ?>

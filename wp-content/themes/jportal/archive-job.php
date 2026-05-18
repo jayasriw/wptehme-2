@@ -1,3 +1,1 @@
-<?php get_header(); ?>
-<main class="jp-container jp-content"><div class="jp-page-head"><span class="jp-kicker">Job board</span><h1>Explore open roles</h1><p>Search jobs by keyword, location, category, work style, and compensation.</p></div><?php echo do_shortcode('[jportal_jobs limit="12"]'); ?></main>
-<?php get_footer(); ?>
+<?php get_header(); ?><main class="jp-container jp-content"><div class="jp-page-head"><span class="jp-kicker">Job board</span><h1>Explore open roles</h1><p>Search jobs by keyword, location, category, work style, and compensation.</p></div><?php echo do_shortcode('[jportal_jobs limit="12"]'); ?></main><?php get_footer(); ?>
