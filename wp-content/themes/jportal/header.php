@@ -1,0 +1,21 @@
+<?php
+?><!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo('charset'); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php jportal_body_open(); ?>
+<header class="jp-site-header">
+  <div class="jp-container jp-nav-wrap">
+    <a class="jp-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php if (has_custom_logo()) { the_custom_logo(); } else { echo '<span>jPortal</span>'; } ?></a>
+    <button class="jp-menu-toggle" aria-label="Open menu" type="button">☰</button>
+    <nav class="jp-main-nav" aria-label="Primary navigation"><?php wp_nav_menu(array('theme_location'=>'primary','container'=>false,'fallback_cb'=>false)); ?></nav>
+    <div class="jp-header-actions">
+      <?php if (is_user_logged_in()) : ?><a class="jp-link" href="<?php echo esc_url(wp_logout_url(home_url('/'))); ?>">Logout</a><?php else : ?><a class="jp-link" href="<?php echo esc_url(wp_login_url()); ?>">Login</a><?php endif; ?>
+      <a class="jp-cta" href="<?php echo esc_url(home_url('/submit-job/')); ?>">Post a Job</a>
+    </div>
+  </div>
+</header>
